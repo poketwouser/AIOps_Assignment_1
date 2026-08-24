@@ -1,0 +1,21 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- MLflow local state (regenerable, do NOT commit) ---
+mlruns/
+mlflow.db
+mlartifacts/
+
+# --- Datasets / caches ---
+scikit_learn_data/
+*.npz
+
+# --- OS ---
+.DS_Store
+.~lock.*#
+
+# NOTE: screenshots (*.png) are DELIVERABLES. Never add *.png here.
