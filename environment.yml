@@ -1,0 +1,12 @@
+name: assignment_1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - scikit-learn=1.9.0
+  - pandas=2.3.3
+  - numpy=2.5.2
+  - matplotlib=3.11.1
+  - pip:
+      - mlflow==3.15.1
