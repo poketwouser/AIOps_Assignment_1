@@ -3,3 +3,5 @@ scikit-learn==1.9.0
 pandas==2.3.3
 numpy==2.5.2
 matplotlib==3.11.1
+jupyterlab==4.6.3
+nbconvert==7.17.1
