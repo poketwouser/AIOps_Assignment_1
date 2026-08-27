@@ -27,20 +27,23 @@ def load_mnist(n_train, seed):
 
 
 def make_curve_figure(loss_history, val_acc_history):
-    fig, ax_loss = plt.subplots(figsize=(7, 4.5))
+    fig, (ax_loss, ax_acc) = plt.subplots(1, 2, figsize=(13, 4.5))
     epochs = range(1, len(loss_history) + 1)
 
     ax_loss.plot(epochs, loss_history, color="tab:red", label="train_loss")
+    ax_loss.set_title("train_loss vs epoch")
     ax_loss.set_xlabel("epoch")
-    ax_loss.set_ylabel("train_loss", color="tab:red")
-    ax_loss.tick_params(axis="y", labelcolor="tab:red")
+    ax_loss.set_ylabel("train_loss")
 
-    ax_acc = ax_loss.twinx()
     ax_acc.plot(epochs, val_acc_history, color="tab:blue", label="val_accuracy")
-    ax_acc.set_ylabel("val_accuracy", color="tab:blue")
-    ax_acc.tick_params(axis="y", labelcolor="tab:blue")
+    ax_acc.set_title("val_accuracy vs epoch")
+    ax_acc.set_xlabel("epoch")
+    ax_acc.set_ylabel("val_accuracy")
 
-    fig.suptitle("train_loss vs val_accuracy")
+    for ax in (ax_loss, ax_acc):
+        ax.grid(alpha=0.3)
+        ax.legend(loc="best")
+
     fig.tight_layout()
     return fig
 
