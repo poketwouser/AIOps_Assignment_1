@@ -1,4 +1,4 @@
-# AI Operations (DA3408) — Module 1 Assignment
+# AI Operations (DA3408) — Assignment 1
 
 | Q | Topic | Location |
 |---|-------|----------|
