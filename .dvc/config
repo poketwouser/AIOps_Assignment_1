@@ -1,5 +1,0 @@
-[core]
-    remote = ssh_remote
-['remote "ssh_remote"']
-    url = ssh://kiran@localhost/home/kiran/dvc_storage
-    user = kiran
