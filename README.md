@@ -6,6 +6,7 @@ Repo: <https://github.com/poketwouser/AIOps_Assignment_1>
 Question 4 lives in a separate partner repo: <https://github.com/Kevii137/AIops-A1Q4>
 
 Summary write-up for all four questions: **[`Report.pdf`](Report.pdf)** (1 page).
+AI use declaration: **[`AI_DISCLOSURE.md`](AI_DISCLOSURE.md)** (course code-of-conduct §4).
 Per-question write-ups are the `Answer.pdf` files listed below.
 
 ---
